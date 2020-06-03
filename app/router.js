@@ -44,6 +44,11 @@ import {CommonMoreRightBtnPress, RepositoryDetailRightBtnPress} from './utils/ac
 import WelcomePage from "./components/WelcomePage"
 import {screenWidth, drawerWidth} from "./style/index";
 
+
+import AiopsHome from "./components/Home"
+import AiopsLogin from "./components/Login"
+import AiopsMine from "./components/Mine"
+
 /**
  * 全局路由
  */
