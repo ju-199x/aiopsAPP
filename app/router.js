@@ -46,7 +46,7 @@ import {screenWidth, drawerWidth} from "./style/index";
 
 
 import AiopsHome from "./components/Home"
-import AiopsLogin from "./components/Login"
+import Index from "./components/Login/index.js"
 import AiopsMine from "./components/Mine"
 
 /**
@@ -61,11 +61,11 @@ const getRouter = () => {
             backAndroidHandler={
                 BackUtils()}>
             <Lightbox>
-                <Scene key="main">
-                    <Scene key="WelcomePage" component={WelcomePage} hideNavBar hideTabBar hide/>
-                </Scene>
-                <Scene key="LoginPage">
-                    <Scene component={LoginPage}
+                {/*<Scene key="main">*/}
+                    {/*<Scene key="WelcomePage" component={WelcomePage} hideNavBar hideTabBar hide/>*/}
+                {/*</Scene>*/}
+                <Scene key="Index">
+                    <Scene component={Index}
                            showLabel={false}
                            hideNavBar/>
                 </Scene>
