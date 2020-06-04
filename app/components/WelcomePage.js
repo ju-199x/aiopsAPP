@@ -60,7 +60,7 @@ export default class WelcomePage extends Component {
             if (res && res.result) {
                 Actions.reset("root");
             } else {
-                Actions.reset("LoginPage");
+                Actions.reset("Login");
             }
         }, 2100);
     }

@@ -46,7 +46,7 @@ import {screenWidth, drawerWidth} from "./style/index";
 
 
 import AiopsHome from "./components/Home"
-import Index from "./components/Login/index.js"
+import Login from "./components/Login"
 import AiopsMine from "./components/Mine"
 
 /**
@@ -64,11 +64,11 @@ const getRouter = () => {
                 {/*<Scene key="main">*/}
                     {/*<Scene key="WelcomePage" component={WelcomePage} hideNavBar hideTabBar hide/>*/}
                 {/*</Scene>*/}
-                <Scene key="Index">
-                    <Scene component={Index}
-                           showLabel={false}
-                           hideNavBar/>
-                </Scene>
+                {/*<Scene key="LoginPage">*/}
+                    {/*<Scene component={LoginPage}*/}
+                           {/*showLabel={false}*/}
+                           {/*hideNavBar/>*/}
+                {/*</Scene>*/}
                 <Scene key="root"
                        navigationBarStyle={styles.navigationBar}
                        titleStyle={{color: Constant.titleTextColor}}>
@@ -92,23 +92,58 @@ const getRouter = () => {
                             key="DynamicPage"
                             component={DynamicPage}
                             icon={TabIcon}
-                            title={I18n('tabDynamic')}
+                            title={'首页'}
                             tabIconName={'tabDynamic'}
                         />
                         <Scene
                             key="TrendPage"
                             component={TrendPage}
                             icon={TabIcon}
-                            title={I18n('tabRecommended')}
+                            title={'告警'}
                             tabIconName={'tabRecommended'}
                         />
                         <Scene
-                            key="MyPage"
-                            component={MyPage}
+                            key="DynamicPage"
+                            component={DynamicPage}
                             icon={TabIcon}
-                            title={I18n('tabMy')}
-                            tabIconName={'tabMy'}
+                            title={'任务'}
+                            tabIconName={'tabDynamic'}
                         />
+                        <Scene
+                            key="DynamicPage"
+                            component={DynamicPage}
+                            icon={TabIcon}
+                            title={'报修'}
+                            tabIconName={'tabDynamic'}
+                        />
+                        <Scene
+                            key="DynamicPage"
+                            component={DynamicPage}
+                            icon={TabIcon}
+                            title={'我的'}
+                            tabIconName={'tabDynamic'}
+                        />
+                        {/*<Scene*/}
+                            {/*key="DynamicPage"*/}
+                            {/*component={DynamicPage}*/}
+                            {/*icon={TabIcon}*/}
+                            {/*title={I18n('tabDynamic')}*/}
+                            {/*tabIconName={'tabDynamic'}*/}
+                        {/*/>*/}
+                        {/*<Scene*/}
+                            {/*key="TrendPage"*/}
+                            {/*component={TrendPage}*/}
+                            {/*icon={TabIcon}*/}
+                            {/*title={I18n('tabRecommended')}*/}
+                            {/*tabIconName={'tabRecommended'}*/}
+                        {/*/>*/}
+                        {/*<Scene*/}
+                            {/*key="MyPage"*/}
+                            {/*component={MyPage}*/}
+                            {/*icon={TabIcon}*/}
+                            {/*title={I18n('tabMy')}*/}
+                            {/*tabIconName={'tabMy'}*/}
+                        {/*/>*/}
                     </Scene>
                     <Scene key="PersonPage" component={PersonPage}
                            needRightBtn={true}
